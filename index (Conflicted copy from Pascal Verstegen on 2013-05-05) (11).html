@@ -93,6 +93,12 @@
             .collapse .btn {
 	            margin-top: 34px;
             }
+            .row {
+	            position: relative;
+            }
+            .skrol {
+	            position: absolute;
+            }
             @media (max-width: 500px) {
 	            body {padding: 0;}
             }
@@ -199,14 +205,13 @@
             <div class="row">
             	<div class="span1"></div>
                 <div class="span4 benefit">
-                    <div data-500="margin-left:-500px;" data-1000="margin-left:0px;"><img src="img/mobilefirst.png" /></div>
+                    <img src="img/mobilefirst.png" />
                 </div>
                 <div class="span1"></div>
                 <div class="span5">
                     <h2>Mobile focused</h2>
                     <p>We're 100% focused on mobile. All the data we display you is tailored to answer questions about app usage among your users. We automatically track users, sessions, devices, locations, and more on mobile to save you work.</p>
                 </div>
-                
                <div class="span1"></div>
             </div>
             <div class="row">
@@ -283,7 +288,7 @@
         </script>
         
         <!-- Scrolling animations -->
-        <script type="text/javascript" src="dist/skrollr.min.js"></script>
+        <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
 		
 		<!--[if lt IE 9]>
 		<script type="text/javascript" src="dist/skrollr.ie.min.js"></script>

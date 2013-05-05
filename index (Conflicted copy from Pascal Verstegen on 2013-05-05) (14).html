@@ -24,6 +24,7 @@
                 padding-top: 100px;
                 background: #f9f7f0;
                 color: #96afb7;
+                overflow-x: hidden;
             }
             .hero-graph {
 	            width: 100%;
@@ -70,7 +71,6 @@
 	            margin-bottom: 50px;
             }
             .benefit {
-            	padding-top: 50px;
             }
             .line {
 	            position: absolute;
@@ -92,6 +92,12 @@
             }
             .collapse .btn {
 	            margin-top: 34px;
+            }
+            .row {
+	            position: relative;
+            }
+            .skrol {
+	            position: absolute;
             }
             @media (max-width: 500px) {
 	            body {padding: 0;}
@@ -192,21 +198,24 @@
                 </div>
                 <div class="span1"></div>
                 <div class="span4">
-                    <img src="img/funnels.png" />
+                	<div class="skrol" data-0="right:-100px;opacity:0;" data-300="right:0px;opacity:1;">
+	                    <img src="img/funnels.png" />
+                	</div>
                </div>
                <div class="span1"></div>
             </div>
             <div class="row">
             	<div class="span1"></div>
                 <div class="span4 benefit">
-                    <div data-500="margin-left:-500px;" data-1000="margin-left:0px;"><img src="img/mobilefirst.png" /></div>
+                	<div class="skrol" data-100="left:-100px;opacity:0;" data-500="left:0px;opacity:1;">
+	                    <img src="img/mobilefirst.png" />
+                	</div>
                 </div>
                 <div class="span1"></div>
                 <div class="span5">
                     <h2>Mobile focused</h2>
                     <p>We're 100% focused on mobile. All the data we display you is tailored to answer questions about app usage among your users. We automatically track users, sessions, devices, locations, and more on mobile to save you work.</p>
                 </div>
-                
                <div class="span1"></div>
             </div>
             <div class="row">
@@ -217,7 +226,9 @@
                 </div>
                 <div class="span1"></div>
                 <div class="span4 benefit">
-                    <img src="img/disconnected.png" />
+                	<div class="skrol" data-500="right:-100px;opacity:0;" data-800="right:0px;opacity:1;">
+	                    <img src="img/disconnected.png" />
+                	</div>
                </div>
                <div class="span1"></div>
             </div>
@@ -283,7 +294,7 @@
         </script>
         
         <!-- Scrolling animations -->
-        <script type="text/javascript" src="dist/skrollr.min.js"></script>
+        <script type="text/javascript" src="js/vendor/skrollr.min.js"></script>
 		
 		<!--[if lt IE 9]>
 		<script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
