@@ -26,42 +26,42 @@
                 color: #96afb7;
                 overflow-x: hidden;
             }
-            .hero-graph {
+            .benefit-front .hero-graph {
 	            width: 100%;
 	            background: url('img/bg.jpg');
             }
-            .navbar, .navbar-inner {
+            .benefit-front .navbar, .navbar-inner {
 	            height: 100px;
 	            background: #f9f7f0;
 	            box-shadow: 0;
 	            border: 0;
             }
-            .navbar {
+            .benefit-front .navbar {
             	margin-bottom: 0;
             	border-bottom: 1px solid rgba(0,0,0,0.2);
 	            box-shadow: 0px 5px 0px rgba(0,0,0,0.1);
             }
-            .brand {
+            .benefit-front .brand {
 	            margin-top: 10px;
 	            opacity: 1;
 	            transition: opacity 0.5s;
 				-webkit-transition: opacity 0.5s;
             }
-            .brand:hover {
+            .benefit-front .brand:hover {
 	            opacity: 0.7;
             }
-            .hero-unit {
+            .benefit-front .hero-unit {
 	            background: transparent;
 	            color: #f9f7f0;
 	            text-align: center;
             }
-            .hero-unit img {
+            .benefit-front .hero-unit img {
 	            margin: 60px 0 20px;
             }
-            .hero-unit h1 {
+            .benefit-front .hero-unit h1 {
             	text-shadow: 0px 4px 5px rgba(0,0,0,0.1);
             }
-            .hero-unit h2 {
+            .benefit-front .hero-unit h2 {
             	text-shadow: 0px 4px 5px rgba(0,0,0,0.1);
 	            font-weight: normal;
 	            margin-bottom: 30px;
@@ -70,9 +70,7 @@
 	            margin-top: 100px;
 	            margin-bottom: 50px;
             }
-            .benefit {
-            }
-            .line {
+            .benefit-front .line {
 	            position: absolute;
 	            top:150px;
             }
@@ -80,43 +78,63 @@
 	            font-weight: bold;
 	            text-transform: uppercase;
             }
-            .nav li {
+            .benefit-front .nav li {
 	            color: #96afb7;
             }
-            .nav {
+            .benefit-front .nav {
 	            padding-top: 30px;
             }
-            .benefit-front {
+            .benefit-front .benefits-txt {
 	            font-size: 20px;
 	            line-height: 30px;
             }
-            .collapse .btn {
+            .benefit-front .collapse .btn {
 	            margin-top: 34px;
             }
-            .row {
+            .benefit-front .row {
 	            position: relative;
             }
-            .skrol {
+            .benefit-front .span4 {
+            	position: relative;
+            }
+            .benefit-front .skrol {
 	            position: absolute;
+	            width:300px;
             }
-            @media (max-width: 500px) {
-	            body {padding: 0;}
+            @media (min-width: 1200px) {
+	            .benefit-front .skrol {
+	            width: 370px;
+	            }
             }
-            .ani1 {
+            @media (max-width: 979px) and (min-width: 768px) {
+	            .benefit-front .skrol {
+	            width: 228px;
+	            }
+            }
+            @media (max-width: 979px) {
+	            body {padding-top: 0;}
+	            .brand {width: 120px;}
+	            .brand img {margin-left: 15px;margin-top: -10px;}
+	            .benefit-front .navbar, .navbar-inner {height: auto;}
+	            .benefit-front .skrol {position: relative;width:auto;}
+	            .benefit-front .benefits-txt {font-size: 16px;line-height: 26px;}
+	            .benefit-front .row {margin: 20px 0 0;}
+            }
+            .benefit-front .ani1 {
             	-webkit-animation-delay: 0.2s;
             	-moz-animation-delay: 0.2s;
             	-ms-animation-delay: 0.2s;
             	-o-animation-delay: 0.2s;
             	animation-delay: 0.2s;
             }
-            .ani2 {
+            .benefit-front .ani2 {
             	-webkit-animation-delay: 0.6s;
             	-moz-animation-delay: 0.6s;
             	-ms-animation-delay: 0.6s;
             	-o-animation-delay: 0.6s;
             	animation-delay: 0.6s;
             }
-            .ani3 {
+            .benefit-front .ani3 {
             	-webkit-animation-delay: 1s;
             	-moz-animation-delay: 1s;
             	-ms-animation-delay: 1s;
@@ -134,7 +152,6 @@
 				background-image: linear-gradient(to bottom, #3AD8BB, #009D81);
 				background-repeat: repeat-x;
 				border-color: #009D81;
-				border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3AD8BB', endColorstr='#009D81', GradientType=0);
 				filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 			}
@@ -145,13 +162,12 @@
 			.btn-success[disabled] {
 				color: #FFFFFF;
 				background-color: #009D81;
-				*background-color: #003bb3;
 			}
             </style>
 		
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body class="benefit-front">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
@@ -188,7 +204,7 @@
 	        </div>
 		</div>
 		
-		<div class="container benefit-front">
+		<div class="container benefits-txt">
 		
             <div class="row">
             	<div class="span1"></div>
